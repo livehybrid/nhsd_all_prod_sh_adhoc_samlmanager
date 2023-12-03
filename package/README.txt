@@ -1,0 +1,1 @@
+To help manage authentication conf on SplunkCloud

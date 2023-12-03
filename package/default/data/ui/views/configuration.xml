@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="nhsd_all_prod_sh_adhoc_samlmanager:templates/base.html" type="html" isDashboard="False">
+    <label>Configuration</label>
+</view>

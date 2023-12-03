@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "2.0.0",
+  "info": {
+    "title": "NMON SAML Manager",
+    "id": {
+      "group": null,
+      "name": "nhsd_all_prod_sh_adhoc_samlmanager",
+      "version": "1.0.11"
+    },
+    "author": [
+      {
+        "name": "William Searle",
+        "email": null,
+        "company": null
+      }
+    ],
+    "releaseDate": null,
+    "description": "Helper for managing SAML Authentication mappings",
+    "classification": {
+      "intendedAudience": null,
+      "categories": [],
+      "developmentStatus": null
+    },
+    "commonInformationModels": null,
+    "license": {
+      "name": "",
+      "text": "license-eula.txt",
+      "uri": "https://www.splunk.com/en_us/legal/splunk-software-license-agreement.html"
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseNotes": {
+      "name": null,
+      "text": "./README.txt",
+      "uri": null
+    }
+  },
+  "dependencies": {},
+  "tasks": [],
+  "inputGroups": {},
+  "incompatibleApps": {},
+  "platformRequirements": {
+    "splunk": {
+      "Enterprise": "*"
+    }
+  },
+  "supportedDeployments": [
+    "_standalone",
+    "_distributed"
+  ],
+  "targetWorkloads": null
+}
