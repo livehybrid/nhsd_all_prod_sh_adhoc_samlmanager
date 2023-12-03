@@ -1,0 +1,118 @@
+{
+    "meta": {
+        "restRoot": "TA_saml_manager",
+        "apiVersion": "3.0.0",
+        "name": "nhsd_all_prod_sh_adhoc_samlmanager",
+        "displayName": "NMOM SAML Manager",
+        "version": "1.0.0"
+    },
+    "pages": {
+        "configuration": {
+            "description": "Set up your add-on",
+            "tabs": [
+                {
+                    "title": "Logging",
+                    "name": "logging",
+                    "entity": [
+                        {
+                            "type": "singleSelect",
+                            "label": "Log level",
+                            "defaultValue": "INFO",
+                            "field": "loglevel",
+                            "options": {
+                                "disableSearch": true,
+                                "autoCompleteFields": [
+                                    {
+                                        "value": "DEBUG",
+                                        "label": "DEBUG"
+                                    },
+                                    {
+                                        "value": "INFO",
+                                        "label": "INFO"
+                                    },
+                                    {
+                                        "value": "WARNING",
+                                        "label": "WARNING"
+                                    },
+                                    {
+                                        "value": "ERROR",
+                                        "label": "ERROR"
+                                    },
+                                    {
+                                        "value": "CRITICAL",
+                                        "label": "CRITICAL"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Add-on Settings",
+                    "name": "additional_parameters",
+                    "entity": [
+                        {
+                            "type": "singleSelect",
+                            "required" : true,
+                            "label": "Auth type",
+                            "defaultValue": "PRIVATE_TOKEN",
+                            "field": "auth_type",
+                            "options": {
+                                "disableSearch": true,
+                                "autoCompleteFields": [
+                                    {
+                                        "value": "PRIVATE_TOKEN",
+                                        "label": "Gitlab Token"
+                                    },
+                                    {
+                                        "value": "BASIC_AUTH",
+                                        "label": "Basic Auth (user:pass)"
+                                    },
+                                    {
+                                        "value": "AUTHORIZATION_AUTH",
+                                        "label": "Authentication Header (Bearer/OAuth)"
+                                    },
+                                    {
+                                        "value": "NO_AUTH",
+                                        "label": "No Auth Required"
+                                    }
+                                ]
+                            }
+                        },{
+                            "help": "The token/user:pass combiniation to use for the authentication against the remote url",
+                            "required": false,
+                            "validators": [
+                                {
+                                    "minLength": 0,
+                                    "type": "string",
+                                    "errorMsg": "Max length of text input is 200",
+                                    "maxLength": 200
+                                }
+                            ],
+                            "type": "text",
+                            "label": "auth_string",
+                            "defaultValue": "",
+                            "field": "auth_string"
+                        },{
+                            "help": "The URL to retrieve your authentication conf file from",
+                            "required": true,
+                            "validators": [
+                                {
+                                    "minLength": 0,
+                                    "type": "string",
+                                    "errorMsg": "Max length of text input is 2000",
+                                    "maxLength": 2000
+                                }
+                            ],
+                            "type": "text",
+                            "label": "authorization_conf_url",
+                            "defaultValue": "",
+                            "field": "authorization_conf_url"
+                        }
+                    ]
+                }
+            ],
+            "title": "Configuration"
+        }
+    }
+}
