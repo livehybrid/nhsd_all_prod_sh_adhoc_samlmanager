@@ -5,13 +5,13 @@
     "id": {
       "group": null,
       "name": "nhsd_all_prod_sh_adhoc_samlmanager",
-      "version": "1.0.11"
+      "version": "1.0.0"
     },
     "author": [
       {
-        "name": "William Searle",
+        "name": "Will Searle",
         "email": null,
-        "company": null
+        "company": "LiveHybrid"
       }
     ],
     "releaseDate": null,
@@ -23,9 +23,9 @@
     },
     "commonInformationModels": null,
     "license": {
-      "name": "",
-      "text": "license-eula.txt",
-      "uri": "https://www.splunk.com/en_us/legal/splunk-software-license-agreement.html"
+      "name": null,
+      "text": null,
+      "uri": null
     },
     "privacyPolicy": {
       "name": null,
@@ -34,22 +34,21 @@
     },
     "releaseNotes": {
       "name": null,
-      "text": "./README.txt",
+      "text": null,
       "uri": null
     }
   },
-  "dependencies": {},
-  "tasks": [],
-  "inputGroups": {},
-  "incompatibleApps": {},
-  "platformRequirements": {
-    "splunk": {
-      "Enterprise": "*"
-    }
-  },
+  "dependencies": null,
+  "tasks": null,
+  "inputGroups": null,
+  "incompatibleApps": null,
+  "platformRequirements": null,
   "supportedDeployments": [
     "_standalone",
-    "_distributed"
+    "_distributed",
+    "_search_head_clustering"
   ],
-  "targetWorkloads": null
+  "targetWorkloads": [
+    "_search_heads"
+  ]
 }
